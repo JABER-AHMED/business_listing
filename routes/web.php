@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/index', 'ListingsController@index')->name('index');
