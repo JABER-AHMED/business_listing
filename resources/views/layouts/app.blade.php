@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        BusinessList
                     </a>
                 </div>
 
@@ -70,8 +70,10 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+          <div class="container">
+          @include('inc.message')
+             @yield('content')
+          </div>
     </div>
 
     <!-- Scripts -->
